@@ -23,3 +23,11 @@ function calculatePercentage(currentValue: number, maxVale: number): string {
     </div>
 </div>
 ```
+
+## Wrapping Bootstrap one in a component
+
+You just need to import the component and use it like in the example below:
+
+```html
+    <ProgressBarComponent current={this.state.currentValue} max={this.state.maxValue} min={0} />
+```

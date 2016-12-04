@@ -19,21 +19,21 @@ export const BootstrapProgressbar = (props: Props) => {
             </div>
             <text>
                 {`<javascript>`}
-                <br/>
+                <br />
                 {`function calculatePercentage(currentValue: number, maxValue: number): string {
                         return (currentValue * 100 / maxVale) + "%";
                     }`}
-                <br/>
+                <br />
                 {`</javascript>`}
-                <br/>
+                <br />
                 {`<div className="progress ">`}
-                <br/>
+                <br />
                 {`<div className="progress-bar active progress-bar-stripes" role="progressbar" aria-valuenow={props.currentValue}`}
-                <br/>
+                <br />
                 {`aria-valuemin="0" aria-valuemax={props.maxValue} style={{width:calculatePercentage(props.currentValue, props.maxValue)}}>`}
-                <br/>
+                <br />
                 {`</div>`}
-                <br/>
+                <br />
                 {`</div>`}
             </text>
         </div>
