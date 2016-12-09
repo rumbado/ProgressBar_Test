@@ -35,12 +35,14 @@ export class App extends React.Component<Props, State> {
         <h1> Bootstrap </h1>
         <BootstrapProgressbar currentValue={this.state.currentValue} maxValue={this.state.maxValue} />
         <h1> Wrapping Bootstrap into a component</h1>
-        <ProgressBarComponent current={this.state.currentValue} max={this.state.maxValue} min={0} />
+        <div style={{width: "50%", paddingLeft: "25%", textAlign:"center"}} >
+          <ProgressBarComponent current={this.state.currentValue} max={this.state.maxValue} min={0} />
+        </div>
       </div>
     );
   }
 
   public componentDidMount() {
-    setInterval(this.updateProgress.bind(this), 500);
+    setInterval(this.updateProgress.bind(this), 100);
   }
 }
