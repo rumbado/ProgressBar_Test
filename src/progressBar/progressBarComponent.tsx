@@ -6,23 +6,13 @@ interface Props {
     min: number;
 }
 
-export class ProgressBarComponent extends React.Component<Props, {}> {
+export const ProgressBarComponent = (props: Props) => {
 
-    constructor(props : Props){
-        super(props);
+    function calculateWidth(props: Props): string {
+        return ((props.current - props.min) * 100 / (props.max - props.min)) + "%";
     }
 
-    public render() {
-        const calculateWidth = function(props: Props){
-                return ((props.current - props.min) * 100 / (props.max - props.min)) + "%"; 
-        }
-
-        return (
-            <div className="progress progress-transition" >
-                <div className="progress-bar active" role="progressbar" aria-valuenow={this.props.current}
-                    aria-valuemin={this.props.min} aria-valuemax={this.props.max} style={{ width: calculateWidth(this.props) }}>
-                </div>
-            </div>
-        )
-    }
-};
+    return (
+        <progress min={props.min} max={props.max} value={props.current} />
+    );
+}

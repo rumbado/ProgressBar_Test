@@ -24,7 +24,7 @@ function calculatePercentage(currentValue: number, maxVale: number): string {
 </div>
 ```
 
-## Wrapping Bootstrap one in a component
+## Wrapping Html5 one in a component
 
 You just need to import the component and use it like in the example below:
 
