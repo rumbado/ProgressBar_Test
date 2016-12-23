@@ -1,1 +1,1 @@
-web: webpack
+web: node ./src/app.js
