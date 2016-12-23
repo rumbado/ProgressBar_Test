@@ -6,7 +6,7 @@
   "scripts": {
      "start-dev": "webpack-devserver --inline",
     "start": "http-server ./dist/ -p $PORT",
-    "postinstall" : "webpack",
+    "postinstall" : "webpack build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
