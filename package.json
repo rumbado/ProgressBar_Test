@@ -12,11 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^2.0.3",
-    "webpack": "^1.13.2",
+    
     "webpack-devserver": "0.0.6"
   },
   "dependencies": {
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.2",
     "@types/react": "^0.14.41",
     "@types/react-dom": "^0.14.18",
     "bootstrap": "^3.3.7",
