@@ -5,14 +5,13 @@
   "main": "index.js",
   "scripts": {
      "start-dev": "webpack-devserver --inline",
-    "start": "http-server ./dist/ -p $PORT",
+    "start": "http-server ./dist/ -p process.env.PORT || 8080 ",
     "postinstall" : "webpack build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    
     "webpack-devserver": "0.0.6"
   },
   "dependencies": {
