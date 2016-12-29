@@ -4,6 +4,7 @@
   "description": "In this sample we are going to evaluate different progress bar options.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "webpack",
     "start": "webpack-devserver --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +22,7 @@
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
+    "http-server": "^0.9.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "style-loader": "^0.13.1",

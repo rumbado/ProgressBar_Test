@@ -1,1 +1,1 @@
-web: ./node_modules/.bin/webpack-devserver --inline
+web: ./node_modules/.bin/http-server dist/ -p $PORT
