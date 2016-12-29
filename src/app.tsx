@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Html5Progressbar } from './html5Progressbar';
 import { BootstrapProgressbar } from './bootstrapProgressbar';
-import { ProgressBarComponent } from './progressBar/ProgressBarComponent';
+import { ProgressBarComponent } from './progressBar/progressBarComponent';
 
 interface Props {
 
