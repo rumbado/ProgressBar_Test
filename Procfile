@@ -1,1 +1,1 @@
-web: webpack-devserver --inline
+web: node_modules/.bin/webpack-devserver --inline
