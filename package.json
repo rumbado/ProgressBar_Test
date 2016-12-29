@@ -4,9 +4,9 @@
   "description": "In this sample we are going to evaluate different progress bar options.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "webpack", 
      "start-dev": "webpack-devserver --inline",
     "start": "http-server ./dist/ -p $PORT ",
-    "postinstall" : "webpack build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
